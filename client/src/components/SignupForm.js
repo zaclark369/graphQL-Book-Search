@@ -40,7 +40,7 @@ const SignupForm = () => {
       // const { token, user } = await response.json();
       // console.log(user);
       // Auth.login(token);
-const userData = await addUserP({
+const userData = await addUser({
   variables: {...userFormData}
 });
 
