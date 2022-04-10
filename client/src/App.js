@@ -6,16 +6,16 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 
-const authLink = setContext((_, {headers, ...context})) => {
+const authLink = setContext((_, {headers, ...context}) => {
   const token = localStorage.getItem('id_tokent')
   return {
     headers: {
       ...headers,
       authorization: token?`Bearer ${token}` : ''
-    }
+    },
     ...context,
   };
-};
+});
 
 const httpLink = createHttpLink({
   uri: "/graphql",
