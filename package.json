@@ -1,7 +1,7 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -20,6 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zaclark369/graphQL-Book-Search"
-  }
+    "url": "git+https://github.com/zaclark369/graphQL-Book-Search.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaclark369/graphQL-Book-Search/issues"
+  },
+  "homepage": "https://github.com/zaclark369/graphQL-Book-Search#readme"
 }
