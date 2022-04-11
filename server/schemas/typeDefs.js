@@ -7,13 +7,14 @@ const typeDefs = gql`
     email: String
    
   }
+  
   type Book {
-      bookId: String
-      authors: Array<BookAuthor>
-      description: String
-      title: String
-      image: Image
-      link: String
+    bookId: ID!
+    title: String!
+    authors: [String]
+    description: String!
+    image: String
+    link: String
   }
 
    
