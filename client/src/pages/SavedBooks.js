@@ -12,7 +12,7 @@ const SavedBooks = () => {
   // const [userData, setUserData] = useState({});
 
   const userProfile = Auth.getProfile();
-
+  const token = Auth.loggedIn() ? Auth.getToken() : null;
   // use this to determine if `useEffect()` hook needs to run again
   // const userDataLength = Object.keys(userData).length;
 
@@ -64,7 +64,7 @@ const SavedBooks = () => {
       </Jumbotron>
       <Container>
         <h2>
-          {userData.savedBooks.length
+          {data.me.length
             ? `Viewing ${data.me.savedBooks.length} saved ${data.me.savedBooks.length === 1 ? 'book' : 'books'}:`
             : 'You have no saved books!'}
         </h2>
